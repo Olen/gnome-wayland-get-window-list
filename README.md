@@ -32,11 +32,12 @@ Minimze the window with id `3150741192`
 $ dbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell/Extensions/Windows --method org.gnome.Shell.Extensions.Windows.Minimize 3150741192
 ```
 
-
-
 ## Move or resize a window
 
 Move the window with id `3150741192` to Workspace 1, X=0, Y=0 and resize to width=400, height=800
+
+> [!NOTE] 
+> Maximized windows will not be resized
 
 ```
 $ gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell/Extensions/Windows --method org.gnome.Shell.Extensions.Windows.MoveResize 3150741192 1 0 0 400 800
