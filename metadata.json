@@ -1,0 +1,8 @@
+{
+  "name": "Get Windows",
+  "description": "Get list of windows",
+  "uuid": "get-windows@olen",
+  "shell-version": [
+    "43"
+  ]
+}
