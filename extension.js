@@ -60,8 +60,8 @@ class Extension {
   Move(winid, workspace, x, y, width, height) {
     let win = global.get_window_actors().map(a=>a.meta_window).find(w=>w.get_id()==winid);
     if (win) {
-        win.ws.change_workspace_by_index(workspace, false);
-        win.ws.move_resize_frame(0, x, y, width, height);
+        win.change_workspace_by_index(workspace, false);
+        win.move_resize_frame(0, x, y, width, height);
     } else {
         throw new Error('Not found');
     }
